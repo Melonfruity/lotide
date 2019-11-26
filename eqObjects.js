@@ -8,7 +8,7 @@ const eqObjects = (objOne, objTwo) => {
   
   for (let index in objOneKeys){
     let key = objOneKeys[index];
-
+    
     if (Array.isArray(objOne[key]) && Array.isArray(objOne[key])) {
       if (!eqArrays(objOne[key], objTwo[key]))
         return false;
