@@ -12,11 +12,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const assertEqual = function(actual, expected) {
-  const message = actual === expected ? `Assertion Passed: ${actual} === ${expected}` : `Assertion Failed: ${actual} !== ${expected}`;
-  console.log(message);
-};
-
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) return false;
   for (let i = 0; i < arr1.length; i++){
